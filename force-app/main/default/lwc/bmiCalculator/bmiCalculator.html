@@ -3,19 +3,31 @@
         <div class="box">
             <h1>BMI Calculator</h1>
             <form>
-                <!-- form content -->
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label slds-text-title_bold" for="text-input-height">Height</label>
+                    <div class="slds-form-element__control slds-var-m-bottom_small_x">
+                        <input type="number" id="text-input-height" min="0" placeholder="Please enter your height in cm" required class="slds-input" />
+                    </div>
+                </div>
+                <div class="slds-form-element">
+                    <label class="slds-form-element__label slds-text-title_bold" for="text-input-weight">Weight</label>
+                    <div class="slds-form-element__control slds-var-m-bottom_large">
+                        <input type="number" id="text-input-weight" min="0" placeholder="Please enter your weight in kg" required class="slds-input" />
+                    </div>
+                </div>
+                <lightning-button label="Calculate" title="Non-primary action" onclick={handleClick} class="custom-button slds-var-m-bottom_medium">Calculate</lightning-button>
             </form>
-            <div class="info-wrapper">
+            <div class="info-wrapper slds-var-m-top_large">
                 <h2>What your BMI means</h2>
-                <p>Once you have measured your BMI, you can determine your healthy weight range. If your BMI is:</p>
-                <h3>Under 18.5</h3>
-                <p>You are very underweight and possibly malnourished.</p>
-                <h3>Between 18.5 to 24.9</h3>
-                <p>you have a healthy weight range for young and middle-aged adults.</p>
-                <h3>25.0 to 29.9</h3>
-                <p>You are overweight.</p>
-                <h3>Over 30</h3>
-                <p>You are obese.</p>
+                <p class="slds-var-m-bottom_large">Once you have measured your BMI, you can determine your healthy weight range. If your BMI is:</p>
+                <h3 class="slds-text-color_error slds-text-heading_medium">Under 18.5</h3>
+                <p class="slds-var-m-bottom_large">You are very underweight and possibly malnourished.</p>
+                <h3 class="slds-text-color_success slds-text-heading_medium">Between 18.5 to 24.9</h3>
+                <p class="slds-var-m-bottom_large">you have a healthy weight range for young and middle-aged adults.</p>
+                <h3 class="slds-text-color_error slds-text-heading_medium">25.0 to 29.9</h3>
+                <p class="slds-var-m-bottom_large">You are overweight.</p>
+                <h3 class="slds-text-color_error slds-text-heading_medium">Over 30</h3>
+                <p class="slds-var-m-bottom_small">You are obese.</p>
             </div>
         </div>
     </div>

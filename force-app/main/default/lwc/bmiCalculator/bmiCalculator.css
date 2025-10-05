@@ -2,11 +2,20 @@
     --green:#104509;
     --light-wight:#fafafa;
     --light-green:#74A16D;
-    --yellow:#F7C100;
+    --blue:#273CF5;
+    --yellow:hsl(47, 92%, 64%);
     --size-16:16px;
     --size-14:14px;
     --size-12:12px;
     --size-38:38px;
+    --size-40:40px;
+}
+
+.app{
+    min-height: 100vh;
+    background-image: url(/sfsites/c/resource/BMICalcAppBackground);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
@@ -15,7 +24,7 @@
     text-align: center;
     margin: auto;
     background: var(--green);
-    color: var(--light-wight);
+    color: var(--blue);
     padding: var(--size-16);
     border-radius: 38px;
     
@@ -25,10 +34,37 @@ h1{
     font-size: 36px;
     padding: 20px 0;
     font-weight: bold;
+    color: var(--light-wight);
 }
 
 .info-wrapper{
-    background: var(--light-green);
+    background: var(--yellow);
     padding: var(--size-16);
     border-bottom-left-radius: var(--size-38);
+    border-bottom-right-radius: var(--size-38);
+    text-align: center;
+    font-size: var(--size-14);
+}
+
+h2{
+    font-size:26px;
+    color:black;
+}
+
+label{
+    font-size: 20px;
+    color: white;
+}
+
+input{
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+}
+.custom-button{
+    --slds-c-button-text-color: var(--green);
+     
+    font-size: var(--size-16);
+    padding: var(--size-12);
+    color: var(--green);
 }
