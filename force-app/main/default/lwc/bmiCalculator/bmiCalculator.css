@@ -1,0 +1,34 @@
+:host(){
+    --green:#104509;
+    --light-wight:#fafafa;
+    --light-green:#74A16D;
+    --yellow:#F7C100;
+    --size-16:16px;
+    --size-14:14px;
+    --size-12:12px;
+    --size-38:38px;
+}
+
+
+.box {
+    max-width: 600px;
+    text-align: center;
+    margin: auto;
+    background: var(--green);
+    color: var(--light-wight);
+    padding: var(--size-16);
+    border-radius: 38px;
+    
+}
+
+h1{
+    font-size: 36px;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.info-wrapper{
+    background: var(--light-green);
+    padding: var(--size-16);
+    border-bottom-left-radius: var(--size-38);
+}
