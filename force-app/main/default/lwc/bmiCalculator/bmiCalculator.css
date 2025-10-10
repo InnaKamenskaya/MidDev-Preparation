@@ -68,3 +68,8 @@ input{
     padding: var(--size-12);
     color: var(--green);
 }
+
+.result-value{
+    color: var(--yellow);
+    font-size: 30px;
+}
