@@ -16,6 +16,7 @@
     background-image: url(/sfsites/c/resource/BMICalcAppBackground);
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 24px;
 }
 
 
@@ -26,8 +27,7 @@
     background: var(--green);
     color: var(--blue);
     padding: var(--size-16);
-    border-radius: 38px;
-    
+    border-radius: 38px;    
 }
 
 h1{
